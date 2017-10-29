@@ -1,0 +1,31 @@
+
+
+<!-- sidebar menu -->
+
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu col-lg-2 col-sm-1 col-xs-3" style="  background: #2A3F54;height:150vh;">
+              <div class="" style="padding-top:10px;padding-bottom:10px;">
+                            <a href="index.html" class="site_title"><i class="fa fa-stethoscope"></i> <span>OnCall !</span></a>
+                          </div>
+              <div class="menu_section">
+                <h3 style="padding:10px;">Control</h3>
+                <ul class="nav side-menu">
+                <% if(rule == 1){ %>
+                  <li><a href="/full_admin"><i class="fa fa-user"></i> Hospitals admins</span></a></li>
+                  <% } %>
+                  <h1>RULE:  <%= rule %></h1>
+                  <% if(rule == 1 || rule == 2){ %>
+                  <li><a><i class="fa fa-ambulance"></i> Hospital options <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="/hospital_admin_sections">Sections</a></li>
+                      <li><a href="/hospital_admin_inspectors">supervisors</a></li>
+                    </ul>
+                  </li>
+                  <% } %>
+                  <% if(rule == 1 || rule == 2 || rule == 3){ %>
+                  <li><a href="/inspector"><i class="fa fa-user-md"></i> Doctors times</span></a>
+                  </li>
+                  <% } %>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->

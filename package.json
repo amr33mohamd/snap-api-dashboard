@@ -1,0 +1,22 @@
+{
+  "name": "snapcaht",
+  "version": "1.0.0",
+  "description": "snap finder",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Amr Mohamed",
+  "license": "ISC",
+  "dependencies": {
+    "add-subtract-date": "^1.0.11",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "moment": "^2.18.1",
+    "mysql": "^2.14.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "snap"
+  ]
+}
